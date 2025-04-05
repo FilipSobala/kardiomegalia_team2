@@ -7,3 +7,5 @@
 - heart_width - najdłuższa szerokość serca
 
 ---
+### maps
+- first idea - pixel distribution, basicly maps histogram to five values
