@@ -1,4 +1,4 @@
-id,state,lungs_width,heart_width
+id,label,lungs_width,heart_width
 7,True,436,227
 13,True,474,224
 24,True,361,149
