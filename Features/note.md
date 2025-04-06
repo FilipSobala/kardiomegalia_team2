@@ -9,3 +9,10 @@
 ---
 ### maps
 - first idea - pixel distribution, basicly maps histogram to five values
+
+
+### center_of_mass.py
+-  heart's center of mass -> tuple(y : int, x : int)
+
+### polygon_area_ratio.py
+- heart's best fitted polygon area to lung's best fitted polygon area ratio
