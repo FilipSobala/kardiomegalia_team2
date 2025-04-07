@@ -1,0 +1,32 @@
+import cv2
+import numpy as np
+import heart
+import manage
+
+
+
+def get_enclosing_circle_radius(img: np.ndarray, target_label: int = 2):
+    """
+    Znajduje promień i środek okręgu opisanego na sercu
+    
+    Parameters:
+        img tablica z 0,1,2
+        interesuje nas serce oznaczone przez 2
+
+    """
+    # tam gdzie jest 2 czyli serce robimy na bial a reszta czarna
+    mask = (img == target_label).astype(np.uint8) * 255
+
+    # zajdujemy kontury
+    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    if not contours:
+        return None, None  # jesli nie ma konturow zwracamy nic
+
+    # Uzywamy najwiekszego konturu (na wypadek kilku)
+    contour = max(contours, key=cv2.contourArea)
+
+    # Znajdujemy okrag opisany
+    (x, y), radius = cv2.minEnclosingCircle(contour)
+
+    return radius, (int(x), int(y))     #zwracamy promień i współrzędne środka
