@@ -16,3 +16,17 @@
 
 ### polygon_area_ratio.py
 - heart's best fitted polygon area to lung's best fitted polygon area ratio
+
+### inertia_tensor.py / tensor_features.csv
+
+Computes the inertia tensor of the heart (or lungs, if provided) and its normalized difference.
+
+Features:  
+`id`, `label`, `xx`, `yy`, `xy`, `normalized_diff`
+
+The class in `inertia_tensor.py` returns:  
+- CSV columns (if exporting to CSV via `save_to_csv`)  
+- A list of dictionaries (if using `compute_features`)  
+- A single dictionary (if using `compute_feature_single`)
+
+
