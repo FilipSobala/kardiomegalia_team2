@@ -1,13 +1,3 @@
-"""
-tensor xx yy xy normalize_diff
-limit above 90 max_dist
-
-circled ratio
-lungs_width heart_width
-
-
-
-"""
 from src.manage import DataLoader
 from src.above import above
 from src.cr import cr_ratio
