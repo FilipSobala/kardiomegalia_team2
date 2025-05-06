@@ -1,3 +1,8 @@
-# kardiomegalia_team2
+# Random Forest Classficator
+Based on following features:
+- inertia tensors
+- above - custom feature
+- cr ratio
+- lungs width and heart width
 
-Notes on the project
+
