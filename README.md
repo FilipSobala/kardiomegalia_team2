@@ -21,10 +21,10 @@ The dataset is small (47 scans), so results should be read as a proof of concept
 
 ## Run
 ```bash
-pip install pandas scikit-learn nibabel numpy
+pip install pandas scikit-learn scikit-image nibabel numpy jupyter
 jupyter notebook main.ipynb
 ```
 `main.ipynb` computes the features for `data/train` and `data/test`, trains the model and prints the metrics.
 
 ## Stack
-Python · scikit-learn · pandas · NumPy
+Python · scikit-learn · scikit-image · nibabel · pandas · NumPy
